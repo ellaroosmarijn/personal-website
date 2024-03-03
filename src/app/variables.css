@@ -115,13 +115,14 @@
   --color-success: #0e6526;
   --color-error: #df3f1e;
 
-  --color-olive-600: #3c350a;
-  --color-olive-500: #52490f;
-  --color-olive-400: #877817;
-  --color-olive-300: #a3911d;
-  --color-olive-200: #bdac3e;
-  --color-olive-100: #e7d873;
-  --color-olive-50: #e7d87380;
+  --color-olive-700: #3c350a;
+  --color-olive-600: #52490f;
+  --color-olive-500: #877817;
+  --color-olive-400: #a3911d;
+  --color-olive-300: #bdac3e;
+  --color-olive-200: #e7d873;
+  --color-olive-100: #ffef86;
+  --color-olive-50: #ffef8680;
 
   /* Border radiuses */
   --radius-xs: 3px;
@@ -190,4 +191,6 @@
   --easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
   --easing-accelerate: cubic-bezier(0.4, 0, 1, 1);
   --easing-decelerate: cubic-bezier(0, 0, 0.2, 1);
+
+  --header-height: var(--size-32);
 }
