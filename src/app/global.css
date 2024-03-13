@@ -6,6 +6,7 @@ body {
   background-color: var(--color-off-white);
   height: 100%;
   overflow-y: auto;
+  margin: 0;
 }
 
 main {
