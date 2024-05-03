@@ -14,8 +14,8 @@ export function CallToAction({
   return (
     <div className={className}>
       <div className={styles.container}>
-        <h2>{title}</h2>
-        <p>{subtitle}</p>
+        <h2 className={styles.title}>{title}</h2>
+        <p className={styles.subtitle}>{subtitle}</p>
         <input className={styles.input} />
       </div>
     </div>
