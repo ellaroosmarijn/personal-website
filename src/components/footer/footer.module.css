@@ -5,21 +5,21 @@
 
 .cta {
   width: 50vw;
-  height: 100%;
 }
 
 .link-container {
   display: flex;
   flex-direction: column;
-  height: 100%;
   background-color: var(--color-olive-600);
   padding: var(--size-14) var(--size-5);
   width: 50vw;
+  align-items: center;
 }
 
 .link {
   text-decoration: none;
   color: var(--color-olive-200);
   font-weight: var(--weight-medium);
-  font-size: var(--size-5);
+  font-size: var(--size-7);
+  margin: var(--size-4) 0;
 }
