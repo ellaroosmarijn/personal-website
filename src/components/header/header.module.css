@@ -1,8 +1,9 @@
 .link {
-  font-size: var(--scale-2);
+  font-size: var(--scale-4);
   color: var(--color-olive-600);
   padding: 0 var(--size-20);
   text-decoration: none;
+  font-weight: var(--weight-bold);
   &.link:hover {
     text-decoration: underline;
   }
