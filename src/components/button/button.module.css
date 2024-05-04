@@ -9,26 +9,29 @@
   transition: background 300ms var(--easing-standard),
     box-shadow 300ms var(--easing-standard);
   cursor: pointer;
+  box-shadow: 0 0 10px transparent;
+  border: 3px solid transparent;
+  background-clip: padding-box;
   &.primary {
-    background: var(--color-olive-700);
+    background-color: var(--color-olive-700);
   }
   &.secondary {
-    background: var(--color-olive-500);
+    background-color: var(--color-olive-500);
   }
   &.ghost {
-    background: transparent;
+    background-color: transparent;
     color: var(--color-olive-700);
     text-decoration: underline;
   }
   &.loading {
-    background: var(--color-olive-300) !important;
+    background-color: var(--color-olive-300) !important;
     min-width: var(--size-24);
     pointer-events: none;
   }
   &.disabled {
     pointer-events: none;
     cursor: not-allowed;
-    background: var(--color-grey-400) !important;
+    background-color: var(--color-grey-400) !important;
     color: var(--color-grey-700) !important;
   }
 }
