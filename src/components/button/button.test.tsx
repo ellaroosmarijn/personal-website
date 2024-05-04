@@ -43,4 +43,12 @@ describe("Button", () => {
 
     expect(defaultToPrimaryTheme).toHaveClass("primary")
   })
+
+  it("should disable the button when disabled prop is true", () => {
+    render(<Button label="Disabled" disabled={true} />)
+
+    const disabledButton = screen.getByText("Disabled")
+
+    expect(disabledButton).toBeDisabled()
+  })
 })
