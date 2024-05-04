@@ -22,10 +22,11 @@ export function Button({
   ...props
 }: ButtonProps) {
   const El = href ? Link : "button"
+  const linkProps = href ? { href } : undefined
 
   return (
     <El
-      to={href}
+      {...linkProps}
       className={cx(
         styles.button,
         styles[theme],
