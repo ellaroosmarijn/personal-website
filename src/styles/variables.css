@@ -1,16 +1,19 @@
 :root {
-  /* Typesets */
-  --text-xs: var(--scale-00) / 1.4 var(--font-garamond);
-  --text-sm: var(--scale-0) / 1.4 var(--font-garamond);
-  --text-md: var(--scale-1) / 1.4 var(--font-garamond);
-  --text-lg: var(--scale-2) / 1.4 var(--font-garamond);
-  --text-xl: var(--scale-3) / 1.4 var(--font-garamond);
-  --text-2xl: var(--scale-4) / 1.4 var(--font-garamond);
+  /* Font */
+  --font-inter: "Inter", sans-serif;
 
-  --heading-1: var(--scale-8) / 1.1 var(--font-garamond);
-  --heading-2: var(--scale-7) / 1.1 var(--font-garamond);
-  --heading-3: var(--scale-6) / 1.1 var(--font-garamond);
-  --heading-4: var(--scale-5) / 1.1 var(--font-garamond);
+  /* Typesets */
+  --text-xs: var(--scale-00) / 1.4 var(--font-inter);
+  --text-sm: var(--scale-0) / 1.4 var(--font-inter);
+  --text-md: var(--scale-1) / 1.4 var(--font-inter);
+  --text-lg: var(--scale-2) / 1.4 var(--font-inter);
+  --text-xl: var(--scale-3) / 1.4 var(--font-inter);
+  --text-2xl: var(--scale-4) / 1.4 var(--font-inter);
+
+  --heading-1: var(--scale-8) / 1.1 var(--font-inter);
+  --heading-2: var(--scale-7) / 1.1 var(--font-inter);
+  --heading-3: var(--scale-6) / 1.1 var(--font-inter);
+  --heading-4: var(--scale-5) / 1.1 var(--font-inter);
 
   /* Font scale */
   --scale-000: 0.75rem;
