@@ -110,9 +110,12 @@
   --color-black: #000000;
   --color-off-white: #fffcf5;
 
-  --color-grey: #979598;
-  --color-grey-700: #777580;
-  --color-grey-opacity: rgba(151, 149, 152, 0.1);
+  --color-grey-100: #edeaed;
+  --color-grey-300: #e3dfe3;
+  --color-grey-400: #cfcfcf;
+  --color-grey-500: #979598;
+  --color-grey-600: #777580;
+  --color-grey-700: #5f5e66;
 
   --color-success: #0e6526;
   --color-error: #df3f1e;
