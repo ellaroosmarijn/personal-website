@@ -1,0 +1,22 @@
+.card-stack {
+  position: sticky;
+  top: var(--header-height);
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 1500px;
+  padding: var(--size-14) var(--size-10) var(--size-40) var(--size-10);
+  .olive {
+    background-color: var(--color-olive-200);
+    height: 100%;
+  }
+  .yellow {
+    background-color: var(--color-olive-300);
+    height: 100%;
+  }
+  .brown {
+    background-color: var(--color-olive-400);
+    height: 100%;
+  }
+}
