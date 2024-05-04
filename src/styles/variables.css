@@ -133,6 +133,14 @@
   --color-yellow-100: #ffd86e;
   --color-yellow-50: #ffd86e80;
 
+  --color-brown-700: #492a0f;
+  --color-brown-600: #6a3d16;
+  --color-brown-500: #95551d;
+  --color-brown-400: #bf6d26;
+  --color-brown-300: #dd7d29;
+  --color-brown-200: #f58f37;
+  --color-brown-100: #ff9a41;
+
   /* Border radiuses */
   --radius-xs: 3px;
   --radius-sm: 6px;
