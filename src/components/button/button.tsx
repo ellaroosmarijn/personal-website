@@ -34,6 +34,7 @@ export function Button({
         disabled && styles.disabled,
         className
       )}
+      disabled={disabled}
       {...(props as any)}
     >
       {label}
