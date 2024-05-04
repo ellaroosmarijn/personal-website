@@ -35,4 +35,12 @@ describe("Button", () => {
 
     expect(ghostButton).toHaveClass("ghost")
   })
+
+  it("should default to primary theme styling when a theme is undefined", () => {
+    render(<Button label="default to primary theme" />)
+
+    const defaultToPrimaryTheme = screen.getByText("default to primary theme")
+
+    expect(defaultToPrimaryTheme).toHaveClass("primary")
+  })
 })
