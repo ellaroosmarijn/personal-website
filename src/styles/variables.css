@@ -16,17 +16,16 @@
   --heading-4: var(--scale-5) / 1.1 var(--font-inter);
 
   /* Font scale */
-  --scale-000: 0.75rem;
   --scale-00: 0.875rem;
   --scale-0: 1rem;
   --scale-1: 1.125rem;
   --scale-2: 1.25rem;
   --scale-3: 1.5rem;
   --scale-4: 1.75rem;
-  --scale-5: 2.25rem;
-  --scale-6: 3rem;
-  --scale-7: 3.75rem;
-  --scale-8: 5rem;
+  --scale-5: 2rem;
+  --scale-6: 2.25rem;
+  --scale-7: 3rem;
+  --scale-8: 3.75rem;
 
   /* Font weights */
   --weight-extralight: 200;
