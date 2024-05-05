@@ -6,7 +6,6 @@
   flex-direction: column;
   width: 100vw;
   height: 1500px;
-  padding: var(--size-14) var(--size-10) var(--size-40) var(--size-10);
   .olive {
     background-color: var(--color-olive-200);
     height: 100%;
