@@ -87,4 +87,13 @@ describe("Button", () => {
 
     expect(regularButton).toBeInTheDocument()
   })
+
+  it("should add additional classNames to the button", () => {
+    const additionalClass = "my-custom-class"
+    render(<Button label="Custom Class" className={additionalClass} />)
+
+    expect(screen.getByRole("button", { name: "Custom Class" })).toHaveClass(
+      additionalClass
+    )
+  })
 })
