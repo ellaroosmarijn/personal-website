@@ -51,4 +51,15 @@ describe("Button", () => {
 
     expect(disabledButton).toBeDisabled()
   })
+
+  it("should have disabled styling when the disabled prop is true", () => {
+    render(<Button label="Disabled" disabled={true} />)
+
+    const disabledButton = screen.getByText("Disabled")
+
+    expect(disabledButton).toHaveClass("disabled")
+    expect(disabledButton).toHaveStyle({
+      backgroundColor: "var(--color-grey-400)",
+    })
+  })
 })
