@@ -79,4 +79,12 @@ describe("Button", () => {
 
     expect(screen.getByRole("link")).toBeInTheDocument()
   })
+
+  it("should render as button when href prop is not provided", () => {
+    render(<Button label="Button" />)
+
+    const regularButton = screen.getByRole("button", { name: "Button" })
+
+    expect(regularButton).toBeInTheDocument()
+  })
 })
