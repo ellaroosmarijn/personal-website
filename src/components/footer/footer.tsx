@@ -9,7 +9,7 @@ export function Footer() {
   const [modalOpen, setModalOpen] = useState(false)
 
   return (
-    <footer className={styles["footer-container"]}>
+    <footer className={styles["footer-container"]} data-testid="footer">
       <div className={cx(styles["link-container"], styles.contact)}>
         <h2
           className={cx(styles.title, styles.link)}
