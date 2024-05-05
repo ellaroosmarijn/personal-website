@@ -62,4 +62,15 @@ describe("Button", () => {
       backgroundColor: "var(--color-grey-400)",
     })
   })
+
+  it("should have loading styling when the loading prop is true", () => {
+    render(<Button label="Loading button" loading={true} />)
+
+    const loadingButton = screen.getByText("Loading button")
+
+    expect(loadingButton).toHaveClass("loading")
+    expect(loadingButton).toHaveStyle({
+      backgroundColor: "var(--color-olive-300)",
+    })
+  })
 })
