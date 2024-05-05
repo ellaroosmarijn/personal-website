@@ -73,4 +73,10 @@ describe("Button", () => {
       backgroundColor: "var(--color-olive-300)",
     })
   })
+
+  it("should render as Link when href prop is provided", () => {
+    render(<Button label="Link" href={"/some-route"} />)
+
+    expect(screen.getByRole("link")).toBeInTheDocument()
+  })
 })
