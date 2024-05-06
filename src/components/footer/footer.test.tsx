@@ -15,4 +15,14 @@ describe("Footer", () => {
 
     expect(touchButton).toBeInTheDocument()
   })
+
+  it("renders the links correctly", () => {
+    render(<Footer />)
+    const projectsLink = screen.getByRole("link", { name: "Projects" })
+    const socialsLink = screen.getByRole("link", { name: "Socials" })
+    const contactLink = screen.getByRole("link", { name: "Contact" })
+    expect(projectsLink).toBeInTheDocument()
+    expect(socialsLink).toBeInTheDocument()
+    expect(contactLink).toBeInTheDocument()
+  })
 })
