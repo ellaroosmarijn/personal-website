@@ -35,6 +35,18 @@ describe("Input component", () => {
 
     fireEvent.click(screen.getByTestId("input-clear"))
 
-    expect(screen.getByPlaceholderText(placeholder)).toHaveValue("")
+    expect(input).toHaveValue("")
+  })
+
+  it("updates input value correctly", () => {
+    render(
+      <Input placeholder={placeholder} clearable={true} value={inputValue} />
+    )
+
+    const input = screen.getByPlaceholderText(placeholder)
+
+    fireEvent.change(input, { target: { value: "Hello" } })
+
+    expect(input).toHaveValue("Hello")
   })
 })
