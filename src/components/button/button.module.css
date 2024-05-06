@@ -5,7 +5,7 @@
   border-radius: var(--radius-sm);
   padding: var(--size-4) var(--size-6);
   margin: var(--size-5);
-  color: var(--color-bg);
+  color: var(--color-off-white);
   transition: background 300ms var(--easing-standard),
     box-shadow 300ms var(--easing-standard);
   cursor: pointer;
