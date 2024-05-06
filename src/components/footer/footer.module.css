@@ -37,13 +37,7 @@
   box-shadow: 0 0 10px var(--color-yellow-200);
 }
 
-.title {
+.contact {
   font-size: var(--size-9);
   margin: var(--size-4) 0;
-}
-
-.subtitle {
-  font-size: var(--size-4);
-  margin: var(--size-3) 0;
-  font-style: italic;
 }

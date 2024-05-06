@@ -11,12 +11,12 @@ export function Footer() {
   return (
     <footer className={styles["footer-container"]} data-testid="footer">
       <div className={cx(styles["link-container"], styles.contact)}>
-        <h2
-          className={cx(styles.title, styles.link)}
+        <div
+          className={cx(styles.contact)}
           onClick={() => setModalOpen(!modalOpen)}
         >
           Let's get in touch!
-        </h2>
+        </div>
       </div>
       <div className={styles["link-container"]}>
         <Link href={"/projects"} className={styles.link}>
