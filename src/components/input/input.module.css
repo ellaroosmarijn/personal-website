@@ -1,0 +1,72 @@
+.input-container {
+  width: var(--width-xs);
+  margin-bottom: var(--size-5);
+}
+
+.input-field {
+  height: var(--size-8);
+  width: var(--size-96);
+  font: var(--text-md);
+  border: 1px solid var(--color-olive-500);
+  border-radius: var(--radius-sm);
+  background-color: rgb(135, 120, 23, 0.05);
+}
+
+.input-field:focus {
+  outline: none !important;
+  border: 3px solid var(--color-yellow-200);
+  box-shadow: 0 0 10px var(--color-yellow-200);
+  background-clip: padding-box;
+}
+
+.input-field:hover {
+  border: 3px solid var(--color-yellow-200);
+}
+
+.disabled {
+  color: var(--color-grey-500);
+  border-color: var(--color-grey-300);
+}
+
+.disabled:hover {
+  border-color: var(--color-grey-300);
+}
+
+.error {
+  color: var(--color-error);
+}
+
+.error-message {
+  color: var(--color-error);
+  margin-top: var(--size-1);
+}
+
+.error:hover {
+  border: 3px solid var(--color-error);
+  box-shadow: 0 0 3px var(--color-error);
+}
+
+.active {
+  border: 3px solid var(--color-yellow-200);
+}
+
+.info {
+  color: var(--color-grey-500);
+  font: var(--text-xs);
+  font-style: italic;
+  margin-top: var(--size-1);
+}
+
+.disabled-info {
+  color: var(--color-grey-400);
+}
+
+.icon {
+  height: var(--size-4);
+  width: var(--size-4);
+  margin-left: var(--size-1);
+}
+
+.icon:hover {
+  cursor: pointer;
+}
