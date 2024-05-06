@@ -57,4 +57,25 @@ describe("Input component", () => {
 
     expect(input).toBeDisabled()
   })
+
+  it("applies error styling and errorMessage when input is in invalid state", () => {
+    render(
+      <Input
+        placeholder={placeholder}
+        invalid={true}
+        errorMessage={errorMessage}
+      />
+    )
+
+    const input = screen.getByPlaceholderText(placeholder)
+    const errorMessageElement = screen.getByText(errorMessage)
+
+    expect(input).toHaveClass("error")
+
+    expect(input).toHaveStyle({
+      color: "var(--color-error)",
+    })
+
+    expect(errorMessageElement).toBeInTheDocument()
+  })
 })
