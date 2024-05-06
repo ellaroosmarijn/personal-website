@@ -49,4 +49,12 @@ describe("Input component", () => {
 
     expect(input).toHaveValue("Hello")
   })
+
+  it("disables input when disabled prop is true", () => {
+    render(<Input placeholder="Enter text" disabled={true} />)
+
+    const input = screen.getByPlaceholderText("Enter text")
+
+    expect(input).toBeDisabled()
+  })
 })
