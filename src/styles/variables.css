@@ -104,6 +104,7 @@
 
   /** Color palette */
   --color-black: #000000;
+  --color-black-opacity: #00000080;
   --color-off-white: #fffcf5;
 
   --color-grey-100: #edeaed;
