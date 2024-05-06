@@ -25,4 +25,14 @@ describe("Footer", () => {
     expect(socialsLink).toBeInTheDocument()
     expect(contactLink).toBeInTheDocument()
   })
+
+  it("links have correct href values", () => {
+    render(<Footer />)
+    const projectsLink = screen.getByRole("link", { name: "Projects" })
+    const socialsLink = screen.getByRole("link", { name: "Socials" })
+    const contactLink = screen.getByRole("link", { name: "Contact" })
+    expect(projectsLink).toHaveAttribute("href", "/projects")
+    expect(socialsLink).toHaveAttribute("href", "/socials")
+    expect(contactLink).toHaveAttribute("href", "/contact")
+  })
 })
