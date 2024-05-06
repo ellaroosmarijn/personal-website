@@ -102,10 +102,6 @@
   --prose-lg: 75ch;
   --prose-xl: 85ch;
 
-  /* Color shortcuts */
-  --color-text: var(--color-black);
-  --color-bg: var(--color-off-white);
-
   /** Color palette */
   --color-black: #000000;
   --color-off-white: #fffcf5;
