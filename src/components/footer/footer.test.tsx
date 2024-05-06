@@ -7,4 +7,12 @@ describe("Footer", () => {
     const footer = screen.getByTestId("footer")
     expect(footer).toBeInTheDocument()
   })
+
+  it('renders the "Let\'s get in touch!" button', () => {
+    render(<Footer />)
+
+    const touchButton = screen.getByText("Let's get in touch!")
+
+    expect(touchButton).toBeInTheDocument()
+  })
 })
