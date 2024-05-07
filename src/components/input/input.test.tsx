@@ -97,4 +97,10 @@ describe("Input component", () => {
     const input = screen.getByPlaceholderText(placeholder)
     expect(input.tagName).toBe("INPUT")
   })
+
+  it("renders a textarea when large prop is true", () => {
+    render(<Input placeholder={placeholder} large={true} />)
+    const textarea = screen.getByPlaceholderText(placeholder)
+    expect(textarea.tagName).toBe("TEXTAREA")
+  })
 })
