@@ -84,4 +84,11 @@ describe("Input component", () => {
 
     expect(screen.queryByTestId("input-clear")).not.toBeInTheDocument()
   })
+
+  it("sets input value to empty string when value prop is initially empty", () => {
+    render(<Input placeholder={placeholder} value="" />)
+
+    const input = screen.getByPlaceholderText(placeholder)
+    expect(input).toHaveValue("")
+  })
 })
