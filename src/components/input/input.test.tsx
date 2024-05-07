@@ -91,4 +91,10 @@ describe("Input component", () => {
     const input = screen.getByPlaceholderText(placeholder)
     expect(input).toHaveValue("")
   })
+
+  it("renders a text input by default", () => {
+    render(<Input placeholder={placeholder} />)
+    const input = screen.getByPlaceholderText(placeholder)
+    expect(input.tagName).toBe("INPUT")
+  })
 })
