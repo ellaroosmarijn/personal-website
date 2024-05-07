@@ -78,4 +78,10 @@ describe("Input component", () => {
 
     expect(errorMessageElement).toBeInTheDocument()
   })
+
+  it("does not render the X icon when clearable prop is false", () => {
+    render(<Input placeholder={placeholder} clearable={false} />)
+
+    expect(screen.queryByTestId("input-clear")).not.toBeInTheDocument()
+  })
 })
