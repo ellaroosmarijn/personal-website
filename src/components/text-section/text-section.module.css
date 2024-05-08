@@ -1,0 +1,21 @@
+.text-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.text {
+  text-align: center;
+  font: var(--text-2xl);
+  font-weight: var(--weight-bold);
+  max-width: 57.5vw;
+}
+
+.text .black {
+  color: var(--color-black);
+}
+
+.text .white {
+  color: var(--color-off-white);
+}
