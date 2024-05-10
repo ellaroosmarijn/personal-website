@@ -3,11 +3,11 @@ import styles from "./text-section.module.css"
 import cx from "classnames"
 
 type TextSectionProps = {
-  textColor: "white" | "black"
+  textColor?: "white" | "black"
 } & ComponentProps<"div">
 
 export function TextSection({
-  textColor,
+  textColor = "black",
   children,
   className,
   ...props
