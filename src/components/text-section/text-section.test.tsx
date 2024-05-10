@@ -33,4 +33,16 @@ describe("TextSection", () => {
     const textElement = screen.getByText("Test")
     expect(textElement.parentElement).toHaveClass(additionalClassName)
   })
+
+  it("spreads additional props correctly", () => {
+    const dataTestId = "text-section"
+    render(
+      <TextSection data-testid={dataTestId} textColor="black">
+        Test
+      </TextSection>
+    )
+
+    const textElement = screen.getByTestId(dataTestId)
+    expect(textElement).toBeInTheDocument()
+  })
 })
