@@ -21,4 +21,16 @@ describe("TextSection", () => {
     rerender(<TextSection textColor="black">Test</TextSection>)
     expect(textElement).toHaveClass("black")
   })
+
+  it("applies additional classNames correctly", () => {
+    const additionalClassName = "custom-class"
+    render(
+      <TextSection className={additionalClassName} textColor="black">
+        Test
+      </TextSection>
+    )
+
+    const textElement = screen.getByText("Test")
+    expect(textElement.parentElement).toHaveClass(additionalClassName)
+  })
 })
