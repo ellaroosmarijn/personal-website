@@ -9,4 +9,16 @@ describe("TextSection", () => {
     const textElement = screen.getByText(textContent)
     expect(textElement).toBeInTheDocument()
   })
+
+  it("applies the correct text color class", () => {
+    const { rerender } = render(
+      <TextSection textColor="white">Test</TextSection>
+    )
+
+    const textElement = screen.getByText("Test")
+    expect(textElement).toHaveClass("white")
+
+    rerender(<TextSection textColor="black">Test</TextSection>)
+    expect(textElement).toHaveClass("black")
+  })
 })
