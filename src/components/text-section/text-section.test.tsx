@@ -22,6 +22,13 @@ describe("TextSection", () => {
     expect(textElement).toHaveClass("black")
   })
 
+  it("defaults to black text color when textColor prop is not provided", () => {
+    render(<TextSection>Test</TextSection>)
+
+    const textElement = screen.getByText("Test")
+    expect(textElement).toHaveClass("black")
+  })
+
   it("applies additional classNames correctly", () => {
     const additionalClassName = "custom-class"
     render(
