@@ -1,21 +1,75 @@
 .card-stack {
+  display: flex;
   position: sticky;
-  top: var(--header-height);
+  top: 0;
   left: 0;
+  width: 100%;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: var(--size-36) var(--size-20);
+  gap: var(--size-48);
+  color: var(--color-off-white);
+}
+
+.olive-1 {
+  background-color: var(--color-olive-300);
+  height: var(--width-lg);
+}
+
+.olive-2 {
+  background-color: var(--color-olive-400);
+  height: var(--width-lg);
+}
+
+.olive-3 {
+  background-color: var(--color-olive-500);
+  height: var(--width-lg);
+}
+
+.olive-4 {
+  background-color: var(--color-olive-600);
+  height: var(--width-lg);
+}
+
+.information {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 1500px;
-  .olive {
-    background-color: var(--color-olive-200);
-    height: 100%;
-  }
-  .yellow {
-    background-color: var(--color-olive-300);
-    height: 100%;
-  }
-  .brown {
-    background-color: var(--color-olive-400);
-    height: 100%;
-  }
+  width: 100%;
+  justify-content: center;
+}
+
+.title {
+  font: var(--heading-4);
+  font-weight: var(--weight-semibold);
+}
+
+.description {
+  font: var(--text-md);
+  margin: 0;
+}
+
+.extra-information {
+  font: var(--text-sm);
+  font-style: italic;
+}
+
+.button-container {
+  flex-direction: row;
+  margin: var(--size-3) 0;
+}
+
+.primary-button {
+  margin-left: 0 !important;
+}
+
+.image {
+  object-fit: contain;
+  aspect-ratio: 1/1;
+  width: 50%;
+  border-radius: var(--radius-md);
+}
+
+.video {
+  width: 50%;
+  border-radius: var(--radius-md);
 }
