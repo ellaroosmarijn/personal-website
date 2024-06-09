@@ -16,13 +16,12 @@ export type InputProps = {
   info?: string
   /** Whether the input is clearable */
   clearable?: boolean
-  /** Icon */
-  icon?: any
   /** Callback on clear */
   onClear?(): void
   /** Select large for text area */
   large?: boolean
-
+  /** Height by number of rows */
+  rows?: number
   onChange?: (
     event: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>
   ) => void
@@ -41,7 +40,7 @@ export function Input({
   value,
   onChange,
   className,
-  icon: Icon,
+  rows,
   ...props
 }: InputProps) {
   const [inputValue, setInputValue] = useState<any>(value)
@@ -77,6 +76,7 @@ export function Input({
           setInputValue(e.target.value)
           onChange?.(e)
         }}
+        rows={rows}
         {...props}
       />
       {clearable && !isInvalid && !!inputValue && (
