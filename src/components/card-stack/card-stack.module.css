@@ -8,26 +8,21 @@
   box-sizing: border-box;
   padding: var(--size-36) var(--size-20);
   gap: var(--size-48);
-  color: var(--color-off-white);
+  color: var(--color-black);
 }
 
-.olive-1 {
-  background-color: var(--color-olive-300);
+.yellow {
+  background-color: var(--color-yellow-200);
   height: var(--width-lg);
 }
 
-.olive-2 {
-  background-color: var(--color-olive-400);
+.pink {
+  background-color: var(--color-pink-200);
   height: var(--width-lg);
 }
 
-.olive-3 {
-  background-color: var(--color-olive-500);
-  height: var(--width-lg);
-}
-
-.olive-4 {
-  background-color: var(--color-olive-600);
+.blue {
+  background-color: var(--color-blue-200);
   height: var(--width-lg);
 }
 

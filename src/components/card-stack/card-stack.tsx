@@ -3,7 +3,7 @@ import styles from "./card-stack.module.css"
 import { Button } from "../button/button"
 import cx from "classnames"
 type CardStackProps = {
-  color: number
+  color: "yellow" | "pink" | "blue"
   title: string
   description: string
   extraInformation?: string
@@ -34,7 +34,7 @@ export function CardStack({
 }: CardStackProps) {
   return (
     <div
-      className={cx(className, styles["card-stack"], styles[`olive-${color}`])}
+      className={cx(className, styles["card-stack"], styles[`${color}`])}
       {...props}
       data-testid={"card-stack"}
     >
