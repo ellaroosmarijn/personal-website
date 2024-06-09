@@ -1,21 +1,30 @@
 .text-section-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   width: 100%;
+}
+
+.title {
+  font: var(--heading-2);
+  color: var(--color-black);
+  font-weight: var(--weight-semibold);
+  text-align: center;
+  margin: var(--size-2) 0;
 }
 
 .text {
   text-align: center;
   font: var(--text-2xl);
-  font-weight: var(--weight-bold);
+  font-weight: var(--weight-medium);
   max-width: 57.5vw;
-}
-
-.text .black {
   color: var(--color-black);
 }
 
-.text .white {
+.white {
   color: var(--color-off-white);
+}
+.black {
+  color: var(--color-black);
 }
