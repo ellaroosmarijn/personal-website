@@ -13,18 +13,19 @@
   border: 3px solid transparent;
   background-clip: padding-box;
   &.primary {
-    background-color: var(--color-olive-700);
+    background-color: var(--color-blue-700);
   }
   &.secondary {
-    background-color: var(--color-olive-500);
+    background-color: var(--color-blue-500);
   }
   &.ghost {
     background-color: transparent;
-    color: var(--color-olive-700);
+    color: var(--color-blue-700);
     text-decoration: underline;
+    padding: 0;
   }
   &.loading {
-    background-color: var(--color-olive-300) !important;
+    background-color: var(--color-blue-300) !important;
     min-width: var(--size-24);
     pointer-events: none;
   }
@@ -38,15 +39,19 @@
 
 .button:hover {
   &.primary {
-    background: var(--color-olive-500);
+    background: var(--color-blue-500);
   }
   &.secondary {
-    background: var(--color-olive-300);
+    background: var(--color-blue-300);
   }
+}
+
+.ghost:hover {
+  text-decoration: none;
 }
 
 .button:focus {
   outline: none !important;
-  border: 3px solid var(--color-yellow-200);
-  box-shadow: 0 0 10px var(--color-yellow-200);
+  border: 3px solid var(--color-off-white);
+  box-shadow: 0 0 1px var(--color-off-white);
 }

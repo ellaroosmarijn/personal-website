@@ -7,20 +7,20 @@
   height: var(--size-8);
   width: var(--size-96);
   font: var(--text-md);
-  border: 1px solid var(--color-olive-500);
+  border: 1px solid var(--color-blue-500);
   border-radius: var(--radius-sm);
   background-color: rgb(135, 120, 23, 0.05);
 }
 
 .input-field:focus {
   outline: none !important;
-  border: 3px solid var(--color-yellow-200);
-  box-shadow: 0 0 10px var(--color-yellow-200);
+  border: 3px solid var(--color-pink-200);
+  box-shadow: 0 0 10px var(--color-pink-200);
   background-clip: padding-box;
 }
 
 .input-field:hover {
-  border: 3px solid var(--color-yellow-200);
+  border: 3px solid var(--color-pink-200);
 }
 
 .disabled {
@@ -47,7 +47,7 @@
 }
 
 .active {
-  border: 3px solid var(--color-yellow-200);
+  border: 3px solid var(--color-pink-200);
 }
 
 .info {
