@@ -26,11 +26,11 @@ describe("Button", () => {
     const ghostButton = screen.getByText("Ghost button")
 
     expect(primaryButton).toHaveStyle({
-      backgroundColor: "var(--color-olive-700)",
+      backgroundColor: "var(--color-blue-700)",
     })
 
     expect(secondaryButton).toHaveStyle({
-      backgroundColor: "var(--color-olive-500)",
+      backgroundColor: "var(--color-blue-500)",
     })
 
     expect(ghostButton).toHaveClass("ghost")
@@ -70,7 +70,7 @@ describe("Button", () => {
 
     expect(loadingButton).toHaveClass("loading")
     expect(loadingButton).toHaveStyle({
-      backgroundColor: "var(--color-olive-300)",
+      backgroundColor: "var(--color-blue-300)",
     })
   })
 
