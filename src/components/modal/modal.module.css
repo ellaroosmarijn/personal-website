@@ -10,7 +10,7 @@
   z-index: var(--layer-top);
   padding: var(--size-14) var(--size-10);
   border-radius: var(--radius-md);
-  box-shadow: 0 0 7px var(--color-black);
+  box-shadow: 0 0 7px var(--color-pink-300);
   width: var(--width-lg);
 }
 
