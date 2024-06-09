@@ -4,8 +4,9 @@
   grid-template-rows: 1fr;
   width: 100vw;
   align-items: center;
-  background-color: var(--color-olive-600) !important;
   color: var(--color-off-white);
+  margin-top: var(--size-32);
+  background-color: var(--color-blue-200);
 }
 
 .link-container {
@@ -13,7 +14,6 @@
   flex-direction: column;
   align-items: center;
   padding: var(--size-14) var(--size-5);
-
   &.contact {
     border-right: 3px solid var(--color-off-white);
   }
@@ -29,15 +29,22 @@
 
 .link:hover {
   text-decoration: underline;
+  color: var(--color-blue-800);
 }
 
 .link:focus {
   outline: none !important;
-  border: 3px solid var(--color-yellow-200);
-  box-shadow: 0 0 10px var(--color-yellow-200);
+  border: 1px solid var(--color-off-white);
+  border-radius: var(--radius-sm);
 }
 
 .contact {
   font-size: var(--size-9);
   margin: var(--size-4) 0;
+}
+
+.contact:hover {
+  cursor: pointer;
+  color: var(--color-blue-800);
+  text-decoration: underline;
 }
