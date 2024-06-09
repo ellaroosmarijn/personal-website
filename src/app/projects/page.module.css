@@ -1,0 +1,11 @@
+.text {
+  margin: 20vh 0;
+}
+
+.title {
+  font: var(--heading-2);
+  color: var(--color-blue-700);
+  font-weight: var(--weight-semibold);
+  text-align: center;
+  margin: var(--size-2) 0;
+}
