@@ -4,6 +4,8 @@ import Link from "next/link"
 import styles from "./footer.module.css"
 import cx from "classnames"
 import { useState } from "react"
+import { Modal } from "../modal/modal"
+import { Input } from "../input/input"
 
 export function Footer() {
   const [modalOpen, setModalOpen] = useState(false)
@@ -29,6 +31,19 @@ export function Footer() {
           Contact
         </Link>
       </div>
+      <Modal
+        open={modalOpen}
+        onClose={() => setModalOpen(false)}
+        heading={"Heading"}
+      >
+        {/* Name input field 
+        Email input field 
+        Message textarea 
+        Submit button */}
+        <Input placeholder={"Name"} clearable={true} />
+        <Input placeholder={"Email"} clearable={true} />
+        <Input placeholder={"Message"} clearable={true} large={true} />
+      </Modal>
     </footer>
   )
 }

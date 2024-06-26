@@ -1,20 +1,33 @@
-import { useEffect, useState, type ComponentProps } from "react";
-import styles from "./scroll-feature.module.css";
+"use client"
+
+import { useEffect, useState, type ComponentProps } from "react"
+import styles from "./scroll-feature.module.css"
+import cx from "classnames"
+interface Page {
+  image: string
+  pageName: string
+  pageInformation: string
+}
+interface ScrollFeatureData {
+  title: string
+  subtitle: string
+  pages: Page[]
+}
 
 type ScrollFeatureProps = {
-  data: any;
-} & ComponentProps<"div">;
+  data: ScrollFeatureData
+} & ComponentProps<"div">
 
 type handleScrollProps = {
-  componentIndex: number;
-  vanishPoint: number;
-  showPoint: number;
-};
+  componentIndex: number
+  vanishPoint: number
+  showPoint: number
+}
 
 type ScrollItemTextProps = {
-  title: string;
-  text: string;
-};
+  title: string
+  text: string
+}
 
 /**
  * scrolls through my journey in tech
@@ -29,73 +42,73 @@ export function ScrollFeature({
     true,
     true,
     true,
-    true
-  ]);
+    true,
+  ])
 
   useEffect(() => {
     const handleScroll = ({
       componentIndex,
       vanishPoint,
-      showPoint
+      showPoint,
     }: handleScrollProps) => {
-      let hideComponent = true;
+      let hideComponent = true
 
       if (window.scrollY >= showPoint && window.scrollY < vanishPoint) {
-        hideComponent = false;
+        hideComponent = false
       } else if (window.scrollY >= vanishPoint) {
-        hideComponent = true;
+        hideComponent = true
       }
 
       setIsFeatureHidden((prevStates) => {
-        prevStates[componentIndex] = hideComponent;
-        return [...prevStates];
-      });
-    };
+        prevStates[componentIndex] = hideComponent
+        return [...prevStates]
+      })
+    }
 
     const handlers = [
       () =>
         handleScroll({
           componentIndex: 0,
           vanishPoint: 800,
-          showPoint: 0
+          showPoint: 0,
         }),
       () =>
         handleScroll({
           componentIndex: 1,
           vanishPoint: 1400,
-          showPoint: 800
+          showPoint: 800,
         }),
       () =>
         handleScroll({
           componentIndex: 2,
           vanishPoint: 2000,
-          showPoint: 1400
+          showPoint: 1400,
         }),
       () =>
         handleScroll({
           componentIndex: 3,
           vanishPoint: 2600,
-          showPoint: 2000
+          showPoint: 2000,
         }),
       () =>
         handleScroll({
           componentIndex: 4,
           vanishPoint: 20000,
-          showPoint: 2600
-        })
-    ];
+          showPoint: 2600,
+        }),
+    ]
 
     handlers.forEach((handler) => {
-      window.addEventListener("scroll", handler);
-      handler();
-    });
+      window.addEventListener("scroll", handler)
+      handler()
+    })
 
     return () => {
       handlers.forEach((handler) =>
         window.removeEventListener("scroll", handler)
-      );
-    };
-  }, []);
+      )
+    }
+  }, [])
 
   return (
     <div className={cx(styles["container"], className)} {...props}>
@@ -134,13 +147,13 @@ export function ScrollFeature({
                     <ScrollItemText title={pageName} text={pageInformation} />
                   </div>
                 </div>
-              );
+              )
             }
           )}
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function ScrollItemText({ title, text }: ScrollItemTextProps) {
@@ -149,5 +162,5 @@ function ScrollItemText({ title, text }: ScrollItemTextProps) {
       <h3 className={styles["page-name"]}>{title}</h3>
       <p className={styles["page-description"]}>{text}</p>
     </>
-  );
+  )
 }

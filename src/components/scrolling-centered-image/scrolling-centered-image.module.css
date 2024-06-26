@@ -1,0 +1,53 @@
+.scroll-container {
+  position: relative;
+  height: 4000px;
+  background-color: tomato;
+}
+
+.scroll-content {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  z-index: var(--layer-top);
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  margin: var(--size-24) 0;
+}
+
+/* .scroll-content.hidden {
+  opacity: 0;
+  pointer-events: none;
+} */
+
+.scroll-item-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-content > div:nth-child(1),
+.scroll-content > div:nth-child(3) {
+  transition: opacity 0.7s;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-title {
+  color: var(--color-black);
+}
+
+.page-description {
+  color: var(--color-black);
+}
